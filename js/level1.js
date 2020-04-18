@@ -63,7 +63,7 @@
 //       Send any message you want.
 
 
-console.log('this is a message for the console')
+// console.log('this is a message for the console')
 
 
 // TIP: Shortcut to refresh a browser is 'CMD + R' on Mac and 'CTRL + R' on
@@ -120,7 +120,8 @@ console.log('this is a message for the console')
 // TODO: Now create two undefined variables named numberOne and numberTwo.
 
 
-
+let numberOne = 1;
+let numberTwo = 2;
 
 
 
@@ -139,7 +140,10 @@ console.log('this is a message for the console')
 // TODO: Create 2 new variables, 1 with your name and the 2nd with your age,
 //       give them appropriate names and display them with an alert pop-up box.
 
+let name = 'Gab';
+let age = 21;
 
+//alert('My name is ' + name + ' and my age is ' + age);
 
 
 
@@ -175,14 +179,17 @@ console.log('this is a message for the console')
 // TODO: Create a constant, and display it an alert pop-up box.
 
 
+const alert1 = 'This is a constant';
 
+//alert(alert1);
 
 
 
 // TODO: Try to assign a new value to your constant to see what happens.
 
 
-
+//alert1 = 'This is not a contant'
+//=> level1.js:190 Uncaught TypeError: Assignment to constant variable.
 
 
 
