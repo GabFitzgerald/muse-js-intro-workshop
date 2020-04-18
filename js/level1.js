@@ -63,11 +63,12 @@
 //       Send any message you want.
 
 
-
+console.log('this is a message for the console')
 
 
 // TIP: Shortcut to refresh a browser is 'CMD + R' on Mac and 'CTRL + R' on
 //      Windows.
+
 
 
 // TIP: Shortcut to save changes to file is 'CMD + S' on Mac and 'CTRL + S' on
