@@ -188,7 +188,7 @@ const alert1 = 'This is a constant';
 // TODO: Try to assign a new value to your constant to see what happens.
 
 
-//alert1 = 'This is not a contant'
+//alert1 = 'This is not a constant'
 //=> level1.js:190 Uncaught TypeError: Assignment to constant variable.
 
 
@@ -223,6 +223,9 @@ const alert1 = 'This is a constant';
 // 1st variable multiplied by the 2nd variable.
 
 
+let ten = 10;
+let three = 3;
+let multipleOfNumbers = ten * three;
 
 
 
@@ -230,7 +233,7 @@ const alert1 = 'This is a constant';
 // TODO: And in the end display the value of multipleOfNumbers.
 
 
-
+console.log(multipleOfNumbers)
 
 
 
@@ -284,7 +287,11 @@ const alert1 = 'This is a constant';
 //  - To see the result you can console.log it.
 
 
+function add(number1, number2) {
+    return number1 + number2;
+};
 
+console.log(add(2, 3));
 
 
 
@@ -293,8 +300,11 @@ const alert1 = 'This is a constant';
 //       number2 from number1 then return that value.
 // Call it with the numbers 5 and 1 and console.log the result.
 
+function subtract(number1, number2) {
+    return number1 - number2;
+};
 
-
+console.log(subtract(5, 1));
 
 
 
@@ -378,8 +388,15 @@ const alert1 = 'This is a constant';
 //
 // Don't forget to console.log it to see the result.
 
+// let operator = '-';
+// let number1 = 3;
+// let number2 = 4;
 
-
+// if (operator === '+') {
+//     console.log(add(number1, number2));
+// } else {
+//     console.log(subtract(number1, number2));
+// };
 
 
 
@@ -415,7 +432,13 @@ const alert1 = 'This is a constant';
 
 // TODO: Let's create 2 more functions and name them 'divide' and 'multiply'.
 
+function divide(number1, number2) {
+    return number1 / number2;
+};
 
+function multiply(number1, number2) {
+    return number1 * number2;
+};
 
 
 
@@ -427,6 +450,19 @@ const alert1 = 'This is a constant';
 //       else console.log - "Sorry, we don't know this operator".
 //       (Copy it to here and comment out the first version)
 
+let operator = '/';
+let number1 = 3;
+let number2 = 4;
+
+if (operator === '+') {
+    console.log(add(number1, number2));
+} else if (operator === '-') {
+    console.log(subtract(number1, number2));
+} else if (operator === '/') {
+    console.log(divide(number1, number2));
+} else {
+    console.log(multiply(number1, number2));
+}
 
 
 
@@ -458,7 +494,8 @@ const alert1 = 'This is a constant';
 // TODO: Try inverting a true or false value and print the result to the console
 
 
-
+let theTruth = true
+console.log(!theTruth)
 
 
 
