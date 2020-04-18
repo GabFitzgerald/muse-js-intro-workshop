@@ -122,7 +122,8 @@
 //       variable named ourTitle.
 //       console.log it and see what you get!
 
-
+let ourTitle = document.querySelector('h1');
+console.log(ourTitle);
 
 
 
@@ -144,6 +145,9 @@
 
 // TODO: Get all <li> elements from the page in a variable named mediaLinks.
 
+let mediaLinks = document.querySelectorAll('li');
+
+console.log(mediaLinks);
 
 
 
@@ -152,14 +156,16 @@
 // TODO: Now console.log mediaLinks.length
 
 
-
+console.log(mediaLinks.length);
 
 
 
 // TODO: Do you remember loops from level 2? Using this knowledge, iterate
 //       through each mediaLinks item and console.log it.
 
-
+for (i=0; i < mediaLinks.length; i++){
+    console.log(mediaLinks[i]);
+};
 
 
 
@@ -179,7 +185,8 @@
 
 // TODO: Get the content of our 'h1' element and console.log it.
 
-
+let content = ourTitle.textContent;
+console.log(content);
 
 
 
@@ -201,8 +208,8 @@
 //       want.
 
 
-
-
+ourTitle.textContent = "My new title";
+console.log(content);
 
 
 /*
@@ -220,6 +227,8 @@
 // TODO: Update the value of the 'src' attribute of our 'img' tag to
 //       "img/kittens.jpeg"
 
+let image = document.querySelector('img');
+image.src = "img/kittens.jpeg";
 
 
 
@@ -244,9 +253,8 @@
 
 // TODO: Get any element on the page and change some styles for it.
 
-
-
-
+let text = document.querySelector('p');
+text.style.fontFamily = "comic-sans";
 
 
 /*
@@ -273,6 +281,13 @@
 //       put it into our header.
 //
 // P.S. You can also give styles to the new node that you create.
+
+const header = document.querySelector('header');
+const newImage = document.createElement('img');
+newImage.src = '../img/logo_muses_color.svg';
+// const imageInsert = document.createTextNode('logo_muses_color.svg');
+header.appendChild(newImage);
+// newImage.appendChild(imageInsert);
 
 
 
