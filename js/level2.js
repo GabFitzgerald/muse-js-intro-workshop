@@ -43,7 +43,7 @@
 // TODO: Create your own array, named favouriteFood, and write in a couple of
 //       things you like.
 
-
+let favouriteFood = ['pasta', 'chocolate', 'mushrooms'];
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-
+console.log(favouriteFood.length);
 
 
 /*
@@ -91,7 +91,7 @@
 // TODO: Get the third element from your array favouriteFood and console.log it.
 
 
-
+console.log(favouriteFood[2]);
 
 
 
@@ -116,14 +116,14 @@
 //       with anything else.
 
 
-
+favouriteFood[0] = 'asparagus';
 
 
 
 // TODO: console.log the whole array to check.
 
 
-
+console.log(favouriteFood);
 
 
 
@@ -147,14 +147,14 @@
 // TODO: Let's extend your list of favouriteFood and add one more value to it.
 
 
-
+favouriteFood.push('bananas');
 
 
 
 // TODO: console.log the whole array to check.
 
 
-
+console.log(favouriteFood);
 
 
 
@@ -181,7 +181,10 @@
 // TODO: Try creating an array as a constant and modifying the values in it.
 
 
-
+const array = [1,2,3,4];
+array.push(5);
+array[0] = 10;
+console.log(array);
 
 
 
@@ -189,7 +192,10 @@
 //       with bracket notation (array[1]) and
 //       assigning a new whole new array to the constant
 
-
+// array = [6,7,8,9];
+// console.log(array);
+// => Uncaught TypeError: Assignment to constant variable.
+// at level2.js:195
 
 
 
@@ -242,8 +248,11 @@
 
 // TODO: Using a 'while loop', tell your computer to log the numbers from
 //       ten to one.
-
-
+let number = 10
+while (number > 0) {
+    console.log(number);
+    number -= 1; 
+}
 
 
 
@@ -265,7 +274,10 @@
 
 // TODO: Log every 3rd number from three to 22 using a 'for loop'.
 
-
+let i;
+for (i = 3; i<=22; i += 3) {
+    console.log(i);
+}
 
 
 
@@ -293,6 +305,9 @@
 // TODO: Try it out with your favouriteFood array.
 
 
+for (let i = 0; i < favouriteFood.length; i++){
+    console.log('I love ' + favouriteFood[i]);
+};
 
 
 
@@ -334,7 +349,17 @@
 // 16 % 4 = 0 — in 16 we have 4*4
 // 19 % 4 = 3 — in 19 we have 4*4 + 3 etc
 
-
+for (let i = 0; i <=50; i++){
+    if (i % 15 === 0) {
+        console.log('FizzBuzz');
+    } else if (i % 5 === 0) {
+        console.log('Buzz'); 
+    } else if (i % 3 === 0) {
+        console.log('Fizz');
+    } else {
+        console.log(i);
+    };
+};
 
 
 
